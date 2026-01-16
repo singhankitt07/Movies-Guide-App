@@ -6,7 +6,7 @@ const inputBox = document.querySelector('.inputBox');
 const getMovieInfo = async (movie) => {
     try {
         const myAPIKey = "d4fe3662";
-        const url = `http://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
+        const url = `https://www.omdbapi.com/?apikey=${myAPIKey}&t=${movie}`;
 
         const response = await fetch(url);
 
@@ -80,3 +80,4 @@ const handleFormSubmission = (e) => {
 
 // Adding event listener to search form
 searchForm.addEventListener('submit', handleFormSubmission);
+
